@@ -1,0 +1,237 @@
+/* Toute la partie template de la création d'un post  */
+.form-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%, 50%);
+    padding-top: 5%;
+    background: rgba(0, 0, 0, 0.698);
+    backdrop-filter: blur(10px);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 400ms ease;
+}
+.form-content.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.create-post-btn {
+    display: block;
+    width: 13rem;
+    margin: 1rem auto;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: 1rem;
+    transition: all 400ms ease;
+}
+
+.form-template{
+    border: 5px solid var(--color-tertiary);
+    padding: 1rem;
+    background-color: var(--color-secondary);
+    border-radius: 1rem;
+}
+
+.cancel-form {
+    cursor: pointer;
+    display: inline;
+    padding: .5rem;
+    background: var(--color-primary);
+    border-radius: 1rem;
+}
+
+.msg {
+    display: flex;
+    flex-direction: column;
+}
+
+.author {
+    border: 1px solid var(--color-tertiary);
+    border-radius: 1rem;
+    padding: 0.6rem;
+    margin: 1rem;
+}
+
+.textarea{
+    border: 1px solid var(--color-tertiary);
+    border-radius: 1rem;
+    padding: 0.6rem;
+    resize: none;
+    margin: 1rem;
+}
+
+.img-downloder {
+    display: none;
+}
+.img-downloder-label {
+    cursor: pointer;
+    padding: 1rem;
+    margin: 1rem;
+    background: var(--color-primary);
+    color: black;
+    border-radius: 1rem;
+    text-align: center;
+    transition: all 400ms ease;
+    
+}
+
+.img-downloder-label:hover {
+    background-color: rgb(241, 165, 135);
+}
+
+.send-btn {
+    cursor: pointer;
+    background: var(--color-primary);
+    width: 15%;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: inherit;
+    align-items: flex-end;
+}
+
+
+/* Ici gere toute la partie de tous les posts  */
+
+.container-post{
+    display: flex;
+    flex-direction: column;
+    margin: 4rem auto;
+    width: 40%;
+    padding: 3rem;
+    border: 1px solid var(--color-tertiary);
+    border-radius: 5rem;
+}
+
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+.user-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 3rem;
+    height: 3rem;
+    background: var(--color-tertiary);
+    border-radius: 1rem;
+    color: var(--color-secondary);
+    font-size: 1.5rem;
+}
+
+.post-content{
+    text-align: center;
+}
+
+.published-img {
+    width: 60%;
+    height: 25%;
+    margin: 1rem auto;
+    border-radius: 1rem;
+}
+
+.edit-post {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+    padding-top: 2rem;
+}
+.post-btn {
+    color: white;
+    padding: 1rem;
+    border-radius: .4rem;
+}
+.edit-btn {
+    cursor: pointer;
+    background-color: rgb(77, 77, 255);
+    transition: all 400ms ease;
+}
+.edit-btn:hover{
+    background-color: blue;
+}
+.del-btn {
+    background: var(--color-primary);
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+.del-btn:hover{
+    background-color: red;
+}
+.likes-dislikes {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content:center;
+    margin: 1.5rem;
+}
+.likes, .dislikes {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.like-icon, .dislike-icon {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.like-icon {
+    color: rgb(0, 149, 45);
+}
+.dislike-icon {
+    color: red;
+    transform: rotate(0deg);
+}
+.dislike-icon.fill {
+    transform: rotate(180deg);
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .container-post{
+        display: flex;
+        flex-direction: column;
+        margin: 4rem auto;
+        width: 100%;
+        padding: 3rem;
+        border: 1px solid var(--color-tertiary);
+        border-radius: 5rem;
+    }
+
+@media screen and (max-width: 760px) {
+
+    .create-post-btn {
+        padding: 1rem;
+        margin: 2rem auto;
+        width: auto;
+    }
+    .user-name {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .user {
+        gap: 1rem;
+    }
+    .edit-post {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 0;
+    }
+    .post-btn {
+        width: auto;
+        padding: .5;
+    }
+}
+}

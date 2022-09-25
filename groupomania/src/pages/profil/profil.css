@@ -1,0 +1,68 @@
+.profil-container {
+    margin: 4rem auto;
+    width: 40%;
+    padding: 3rem;
+    border: 1px solid var(--color-primary);
+    border-radius: 1rem;
+}
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.user-img {
+    width: auto;
+    font-size: 6rem;
+    color: var(--color-secondary);
+    background-color: var(--color-tertiary);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5rem;
+}
+.user-msgs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+.title-profil{
+    text-align: center;
+    border: 1px solid var(--color-tertiary);
+    border-radius: 1rem;
+    margin: 0;
+    padding: 1rem;
+}
+.user-msg{
+    text-align: center;
+    border: 1px solid var(--color-tertiary);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+.button-profil {
+    cursor: pointer;
+    margin-top: 10px;
+    background: var(--color-primary);
+    color: white;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+.img-profile{
+    width: 100%;
+    height: 25%;
+    margin: 1rem auto;
+    border-radius: 1rem;
+}
+
+@media screen and (max-width: 760px) {
+
+    .profil-container {
+        margin: 4rem auto;
+        width: 100%;
+        padding: 3rem;
+        border: 1px solid var(--color-primary);
+        border-radius: 1rem;
+    }
+}
