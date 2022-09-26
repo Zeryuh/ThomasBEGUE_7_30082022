@@ -8,3 +8,6 @@ Ensuite vous devez installer npm sur le dossier backend ainsi que Groupomania.
 Pour cela faire "npm install" dans un terminal qui vise le dossier 'Backend' puis faire la même manipulation sur le dossier 'Groupomania'.
 
 Bienvenue sur le site Groupomania !
+
+
+Si le clonage du répertoire ne fonctionne pas essayer de télécharger en .zip tout le code.
